@@ -1,0 +1,31 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class SequenceCollection {
+    public static void main(String[] args) {
+        // Declare and initialize a List as ArrayList
+        List<Integer> sequence = new ArrayList<>();
+        
+        // Add elements in sequence
+        sequence.add(5);
+        sequence.add(15);
+        sequence.add(25);
+        sequence.add(35);
+        sequence.add(45);
+        
+        // Print the sequence
+        System.out.println("Sequence Collection: " + sequence);
+        
+        // Access elements by index
+        System.out.println("Element at index 2: " + sequence.get(2));
+        
+        // Remove an element from the sequence
+        sequence.remove(Integer.valueOf(25));
+        
+        // Print the sequence after removal
+        System.out.println("Sequence after removal: " + sequence);
+        
+        // Check if sequence contains a specific element
+        System.out.println("Does the sequence contain 15? " + sequence.contains(15));
+    }
+}
